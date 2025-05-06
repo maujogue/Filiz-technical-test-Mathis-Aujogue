@@ -1,0 +1,68 @@
+.easteregg-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.97);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #303031;
+  animation: fadeIn 0.5s;
+}
+
+.easteregg-cat {
+  font-size: 5rem;
+  margin-bottom: 24px;
+  animation: cat-dance 1s infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.easteregg-img {
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 24px;
+}
+
+.easteregg-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.easteregg-close {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  background: #71a894;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+@keyframes cat-dance {
+  0% {
+    transform: translateY(0) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(-18px) rotate(10deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
