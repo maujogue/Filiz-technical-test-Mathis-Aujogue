@@ -1,0 +1,68 @@
+.values {
+  padding: 80px;
+  background: #f9f9f9;
+}
+
+.values-title {
+  font-family: "Nohemi", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #5cb8a7;
+  margin-bottom: 2rem;
+}
+
+.values-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.values-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 80px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.values-icon {
+  width: 104px;
+  height: 88px;
+  margin-bottom: 16px;
+}
+
+.values-card-title {
+  font-family: "Nohemi", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 0.5rem 0;
+  color: #222;
+  text-align: center;
+}
+
+.values-card-desc {
+  font-family: "Inter", Arial, sans-serif;
+  color: #444;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .values {
+    padding: 80px 30px;
+  }
+  .values-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .values-card {
+    padding: 20px;
+  }
+}

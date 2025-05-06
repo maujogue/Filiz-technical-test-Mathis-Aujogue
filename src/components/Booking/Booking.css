@@ -1,0 +1,143 @@
+.booking {
+  background: #f3f0ea;
+  border-radius: 0;
+  padding: 80px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  color: #000000;
+}
+
+.booking-content {
+  flex: 1 320px;
+  min-width: 260px;
+  text-align: left;
+}
+
+.booking-title {
+  font-family: "Nohemi", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  margin: 0;
+  text-align: left;
+}
+
+.booking-desc {
+  font-family: "Inter", Arial, sans-serif;
+  color: #222;
+  font-size: 20px;
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+}
+
+.booking-form {
+  flex: 1 320px;
+  min-width: 260px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.booking-form-group {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form-group label {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.booking-form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #222;
+  background: transparent;
+  padding: 0.5rem 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.booking-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.booking-btn {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  background: #71a894;
+  color: #fff;
+  border: none;
+  border-radius: 46px;
+  padding: 20px 24px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.booking-btn:hover {
+  background: #489e8e;
+}
+
+@media (max-width: 900px) {
+  .booking {
+    padding: 80px 30px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .booking-content,
+  .booking-form {
+    min-width: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  .booking-title,
+  .booking-desc,
+  .booking-form-group label {
+    text-align: center;
+  }
+  .booking-form-actions {
+    justify-content: center;
+  }
+  .booking-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .booking-form-group {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.booking-error {
+  color: #d32f2f;
+  font-size: 0.95em;
+  margin-top: 0.3em;
+  display: block;
+}
+
+.booking-success {
+  color: #71a894;
+  background: #eafbe7;
+  border-radius: 8px;
+  padding: 1em;
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
