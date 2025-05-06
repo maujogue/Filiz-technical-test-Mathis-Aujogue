@@ -107,14 +107,9 @@ const Booking: React.FC = () => {
         </div>
         <div className="booking-form-actions">
           <button type="submit" className="booking-btn">
-            Réserver
+            {success ? "Réservation prise en compte !" : "Réserver"}
           </button>
         </div>
-        {success && (
-          <div className="booking-success">
-            Votre réservation a bien été prise en compte !
-          </div>
-        )}
       </form>
     </section>
   );
