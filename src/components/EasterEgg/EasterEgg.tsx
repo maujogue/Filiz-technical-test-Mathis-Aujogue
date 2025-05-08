@@ -4,6 +4,7 @@ import "./EasterEgg.css";
 interface EasterEggProps {
   triggerKeybind?: boolean; // default true
   onClose?: () => void;
+  forceShow?: boolean;
 }
 
 const Keybind = ["m", "i", "a", "o", "u"];
@@ -11,11 +12,17 @@ const Keybind = ["m", "i", "a", "o", "u"];
 const EasterEgg: React.FC<EasterEggProps> = ({
   triggerKeybind = true,
   onClose,
+  forceShow = false,
 }) => {
   const [keybindIndex, setKeybindIndex] = useState(0);
   const [showCat, setShowCat] = useState(false);
   const [catGifUrl, setCatGifUrl] = useState<string | null>(null);
   const [loadingCat, setLoadingCat] = useState(false);
+
+  // Open modal if forceShow is true
+  useEffect(() => {
+    if (forceShow) setShowCat(true);
+  }, [forceShow]);
 
   // Keybind detection
   useEffect(() => {
