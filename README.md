@@ -8,7 +8,7 @@
 
 Bienvenue dans notre univers où chaque tasse de café est accompagnée d'une dose d'amour félin.
 
-Pour communiquer avec les chats, une fois sur le site, tappez "miaou" ou cherchez l'icone chat pour une suprise...
+Pour communiquer avec les chats, une fois sur le site, tappez `miaou` ou cherchez l'icone chat pour une suprise...
 
 ---
 
