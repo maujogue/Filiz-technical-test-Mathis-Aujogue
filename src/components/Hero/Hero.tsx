@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           Bienvenue dans notre univers où chaque tasse de café est accompagnée
           d'une dose d'amour félin.
         </p>
-        <button className="hero-btn">Nous contacter</button>
+		<button className="hero-btn" onClick={() => window.location.href = "#booking"}>Nous contacter</button>
       </div>
       <div className="hero-image-wrapper">
         <img
